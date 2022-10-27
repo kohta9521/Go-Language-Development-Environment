@@ -5,10 +5,14 @@ import (
 	"net/http"
 )
 
+func Hello(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+
+	w.Write([]byte("<h1 color=steelblue>Hello</h1>"))
+}
+
 func main() {
-	http.HandleFunc("/hello", func(rw http.ResponseWriter, r *http.Request) {
-		rw.Write([]byte("Hello!"))
-	})
+	http.HandleFunc("/hello", Hello)
 
 	log.Fatal(http.ListenAndServe(":5100", nil))
 }
