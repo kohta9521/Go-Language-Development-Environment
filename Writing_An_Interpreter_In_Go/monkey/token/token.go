@@ -2,7 +2,7 @@
 
 package token
 
-type tokenType string
+type TokenType string
 
 type Tokn struct {
 	Type    TokenType
