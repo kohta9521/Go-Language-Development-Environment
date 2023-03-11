@@ -12,4 +12,8 @@ func main() {
 	fmt.Println(i2)
 
 	fmt.Printf("%T\n", i2)
+
+	fmt.Printf("%T\n", int32(i2))
+
+	fmt.Println(int(i2) + i)
 }
