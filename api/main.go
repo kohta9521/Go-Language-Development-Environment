@@ -18,8 +18,14 @@ type Author struct {
 	LastName  string `json:"last_name"`
 }
 
+var books []BOOK
+
 func main() {
 	r := mux.NewRouter()
+
+	// モックデータ
+	books = append(books, Book{ID: "1", Title: "Book one", Author: &Author{FirstName: "Philip", LastName: "Williams"}})
+	books = append(books, Book{ID: "2", Title: "Book Two", Author: &Author{FirstName: "John", LastName: "Johnson"}})
 
 	// エンドポイント
 	r.HandleFunc("/api/books", getBooks).Methods("GET")
