@@ -11,4 +11,20 @@ func main() {
 
 	var arr2 [3]string = [3]string{"A", "B"}
 	fmt.Println(arr2)
+
+	arr3 := [3]int{1, 2, 3}
+	fmt.Println(arr3)
+
+	arr4 := [...]string{"C", "D"}
+	fmt.Println(arr4)
+	fmt.Printf("%T\n", arr4)
+
+	fmt.Println(arr2[0])
+	fmt.Println(arr2[1])
+	// fmt.Println(arr2[2])
+
+	arr2[2] = "C"
+	fmt.Println(arr2)
+
+	fmt.Println(len(arr1))
 }
