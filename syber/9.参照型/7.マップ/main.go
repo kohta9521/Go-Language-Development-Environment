@@ -10,7 +10,6 @@ func main() {
 	fmt.Println(m)
 
 	m2 := map[string]int{"A": 100, "B": 200}
-
 	fmt.Println(m2)
 
 	m3 := map[int]string{
@@ -28,24 +27,24 @@ func main() {
 	fmt.Println(m4)
 
 	fmt.Println(m["A"])
+
 	fmt.Println(m4[2])
 	fmt.Println(m4[3])
 
 	s, ok := m4[3]
 	if !ok {
-		fmt.Println("error")
+		fmt.Println("erroe")
 	}
 	fmt.Println(s, ok)
 
-	m4[2] = "US"
-	fmt.Println(m4)
+	m4[2] = "USA"
+	fmt.Println(m4[2])
 
-	m4[3] = "CHINA"
-	fmt.Println(m4)
+	m3[3] = "China"
+	fmt.Println(m3[3])
 
 	delete(m4, 3)
 	fmt.Println(m4)
 
 	fmt.Println(len(m4))
-
 }
