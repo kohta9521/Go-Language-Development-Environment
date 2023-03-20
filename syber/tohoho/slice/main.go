@@ -14,4 +14,6 @@ func main() {
 		a = append(a, i)
 		fmt.Println(len(a), cap(a))
 	}
+
+	// bufa := make([]byte, 0, 1024)
 }

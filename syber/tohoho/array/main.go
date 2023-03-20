@@ -8,5 +8,4 @@ func main() {
 	a1[1] = "Green"
 	a1[2] = "Blue"
 	fmt.Println(a1[0], a1[1], a1[2])
-
 }
