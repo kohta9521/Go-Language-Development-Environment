@@ -13,19 +13,17 @@ func main() {
 		"Taro",
 		[]int{10, 20, 30},
 	}
-
 	fmt.Println(taro)
-	taro = rev(taro)
+	rev(&taro)
 	fmt.Println(taro)
 }
 
-// rev func
-func rev(md Mydata) Mydata {
-	od := md.Data
+func rev(md *Mydata) {
+	od := (*md).Data
 	nd := []int{}
+
 	for i := len(od) - 1; i >= 0; i-- {
 		nd = append(nd, od[i])
 	}
 	md.Data = nd
-	return md
 }
