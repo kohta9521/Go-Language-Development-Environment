@@ -39,4 +39,7 @@ func main() {
 
 	i2 := <-ch3
 	fmt.Println(i2)
+
+	fmt.Println(<-ch3)
+	fmt.Println("len", len(ch3))
 }
