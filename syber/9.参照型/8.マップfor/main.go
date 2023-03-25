@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// map
+// マップ
 // for
 
 func main() {
@@ -11,7 +11,7 @@ func main() {
 		"Banana": 200,
 	}
 
-	for k, v := range m {
-		fmt.Println(k, v)
+	for _, v := range m {
+		fmt.Println(v)
 	}
 }
