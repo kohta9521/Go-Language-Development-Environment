@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// slice
+// スライス
 // for
 
 func main() {
@@ -11,8 +11,10 @@ func main() {
 
 	// for _, v := range sl {
 	// 	fmt.Println(v)
+
 	// }
 
+	// 古典的For
 	for i := 0; i < len(sl); i++ {
 		fmt.Println(sl[i])
 	}
