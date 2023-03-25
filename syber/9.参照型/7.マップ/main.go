@@ -6,17 +6,14 @@ import "fmt"
 
 func main() {
 	var m = map[string]int{"A": 100, "B": 200}
-
 	fmt.Println(m)
 
-	m2 := map[string]int{"A": 100, "B": 200}
+	m2 := map[string]int{"C": 300, "D": 400}
 	fmt.Println(m2)
 
 	m3 := map[int]string{
-		1: "A",
-		2: "B",
+		2: "b",
 	}
-
 	fmt.Println(m3)
 
 	m4 := make(map[int]string)
@@ -27,24 +24,21 @@ func main() {
 	fmt.Println(m4)
 
 	fmt.Println(m["A"])
-
 	fmt.Println(m4[2])
 	fmt.Println(m4[3])
 
-	s, ok := m4[3]
+	s, ok := m4[1]
 	if !ok {
-		fmt.Println("erroe")
+		fmt.Println("Erroe")
 	}
 	fmt.Println(s, ok)
 
-	m4[2] = "USA"
-	fmt.Println(m4[2])
-
-	m3[3] = "China"
-	fmt.Println(m3[3])
-
-	delete(m4, 3)
+	m4[2] = "US"
 	fmt.Println(m4)
 
-	fmt.Println(len(m4))
+	// delete関数
+
+	delete(m4, 2)
+	fmt.Println(m4)
+
 }
