@@ -25,6 +25,9 @@ func main() {
 	var s string = "100"
 	fmt.Printf("s = %T\n", s)
 
-	i, _ := strconv.Atoi(s)
+	i, err := strconv.Atoi(s)
+	if err != nil {
+		fmt.Println(err)
+	}
 	fmt.Println(i)
 }
