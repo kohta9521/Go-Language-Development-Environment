@@ -23,4 +23,5 @@ func main() {
 	// 配列の値の取り出し
 	fmt.Println(arr1[0])
 	fmt.Println(arr2[0])
+
 }
