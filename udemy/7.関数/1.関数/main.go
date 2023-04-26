@@ -13,6 +13,10 @@ func Double(price int) (result int) {
 	return
 }
 
+func Noreturn() {
+	fmt.Println("no return")
+}
+
 func Div(x, y int) (int, int) {
 	q := x / y
 	r := x % y
@@ -28,4 +32,6 @@ func main() {
 
 	i4 := Double(1000)
 	fmt.Println(i4)
+
+	Noreturn()
 }
