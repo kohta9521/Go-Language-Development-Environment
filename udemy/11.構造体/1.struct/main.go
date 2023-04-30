@@ -30,4 +30,13 @@ func main() {
 	fmt.Println(user4)
 
 	// user5 := User{}
+
+	user6 := User{Name: "user6"}
+	fmt.Println(user6)
+
+	user7 := new(User)
+	fmt.Println(user7)
+
+	user8 := &User{}
+	fmt.Println(user8)
 }
