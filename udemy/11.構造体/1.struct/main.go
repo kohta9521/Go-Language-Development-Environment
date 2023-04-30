@@ -10,6 +10,16 @@ type User struct {
 	// X, Y int
 }
 
+func UpdateUser(user User) {
+	user.Name = "A"
+	user.Age = 1000
+}
+
+func UpdateUser2(user *User) {
+	user.Name = "A"
+	user.Age = 1000
+}
+
 func main() {
 	var user1 User
 	fmt.Println(user1)
@@ -30,4 +40,19 @@ func main() {
 	fmt.Println(user4)
 
 	// user5 := User{}
+
+	user6 := User{Name: "user6"}
+	fmt.Println(user6)
+
+	user7 := new(User)
+	fmt.Println(user7)
+
+	user8 := &User{}
+	fmt.Println(user8)
+
+	UpdateUser(user1)
+	UpdateUser2(user8)
+
+	fmt.Println(user1)
+	fmt.Println(user8)
 }
