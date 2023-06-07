@@ -16,5 +16,5 @@ func main() {
 		return x + y
 	}(1, 2)
 	fmt.Println(i2)
-
+		
 }
