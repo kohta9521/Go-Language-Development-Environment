@@ -8,9 +8,9 @@ func Double(i int) {
 	i *= 2
 }
 
-func Double2(i, *int) {
-	*i = *i * 2
-}
+// func Double2(i, *int) {
+// 	*i = *i * 2
+// }
 
 func main() {
 	var n int = 100
@@ -32,6 +32,5 @@ func main() {
 	n = 200
 	fmt.Println(*p)
 
-	Double2(&n)
 	fmt.Println(n)
 }
