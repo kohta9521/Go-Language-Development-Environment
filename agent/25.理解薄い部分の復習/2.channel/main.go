@@ -28,5 +28,4 @@ func main() {
 	go send(ch, &wg)
 	// 両方の goroutin が終わるのを待つ
 	wg.Wait()
-
 }
