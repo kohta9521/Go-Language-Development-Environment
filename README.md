@@ -1,1 +1,1 @@
-# Go-Language-Development-Environment
+# Go 言語の勉強内容
