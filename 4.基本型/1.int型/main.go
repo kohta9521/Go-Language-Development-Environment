@@ -11,4 +11,6 @@ func main() {
 
 	fmt.Printf("%T\n", i)
 	fmt.Printf("%T\n", i2)
+
+	fmt.Printf("%T\n", int32(i))
 }
