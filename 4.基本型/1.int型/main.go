@@ -8,4 +8,7 @@ func main() {
 
 	var i2 int64 = 200
 	fmt.Println(i2)
+
+	fmt.Printf("%T\n", i)
+	fmt.Printf("%T\n", i2)
 }
