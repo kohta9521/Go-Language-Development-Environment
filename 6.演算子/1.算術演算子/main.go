@@ -20,5 +20,4 @@ func main() {
 	n ++
 	fmt.Println(n)
 	n --
-	fmt.Println(n)
 }
